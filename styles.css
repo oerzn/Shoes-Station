@@ -1,0 +1,154 @@
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #553cd2;
+    color: #fff;
+    padding: 1rem;
+}
+
+
+
+
+nav ul {
+    list-style: none;
+    padding-top: 20px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+nav a:hover{
+    zoom: 1.2;
+    background-color: rgb(139, 91, 234);
+    animation-duration: 200ms;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h1 {
+    color: purple;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #555;
+    zoom: 1.2;
+}
+
+.products {
+    text-align: center;
+    padding: 4rem 0;
+    display: flex;
+}
+
+.product {
+    display: inline-block;
+    margin: 0 1rem;
+    text-align: left;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+.product img:hover{
+    zoom: 1.2;
+    transition-duration: 800ms;
+
+}
+.product h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.product p {
+    color: #555;
+    margin: 1rem 0;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.product a {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.product a:hover {
+    background-color: #555;
+}
+
+.about {
+    text-align: center;
+    padding: 4rem 0;
+    padding-top: 20px;
+    
+    text-align: center;
+}
+.about p{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}

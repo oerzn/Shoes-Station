@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Company Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero" id="home">
+        <h1>Welcome to  Shoes Station</h1>
+        <p>Discover the latest styles and trends in footwear.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+    
+    <section class="products" id="products">
+        <h2>Featured Products</h2>
+        <div class="product">
+            <img src="shoe1.jpg" alt="Shoe 1">
+            <h3>Comfort Sneakers</h3>
+            <p>Experience unparalleled comfort with our sneakers.</p>
+            <span class="price">Rs 6000</span>
+            <a href="#">Buy Now</a>
+        </div>
+        <div class="product">
+            <img src="shoe2.jpg" alt="Shoe 2">
+            <h3>Classic Oxfords</h3>
+            <p>Elegant and timeless oxfords for any occasion.</p>
+            <span class="price">Rs 5000</span>
+            <a href="#">Buy Now</a>
+        </div>
+        <div class="product">
+            <img src="shoe3.jpg" alt="Shoe 2">
+            <h3>White Masters</h3>
+            <p>Elegant and Run.</p>
+            <span class="price">Rs 3000</span>
+            <a href="#">Buy Now</a>
+        </div>
+        <div class="product">
+            <img src="shoe4.jpg" alt="Shoe 2">
+            <h3>White Masters</h3>
+            <p>Elegant and Run.</p>
+            <span class="price">Rs 3000</span>
+            <a href="#">Buy Now</a>
+        </div>
+        <div class="product">
+            <img src="shoe5.jpg" alt="Shoe 2">
+            <h3>White Masters</h3>
+            <p>Elegant and Run.</p>
+            <span class="price">Rs 3000</span>
+            <a href="#">Buy Now</a>
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>"At Shoes Station, we're passionate about crafting stylish and comfortable footwear. Since 2005, we've combined quality craftsmanship with innovative design to create shoes that inspire confidence. Our collection, from classic oxfords to trendy sneakers, caters to diverse tastes. We prioritize customer satisfaction, ensuring a seamless shopping experience. With a commitment to excellence, we're here to make your feet happy, one step at a time."</p>
+    </section>
+    
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to contact us:</p>
+        <p>Email: info@shoecompany.com</p>
+        <p>Phone: 123-456-7890</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Shoe Company</p>
+    </footer>
+
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll("nav a");
+
+            navLinks.forEach((link) => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+
+                    const targetId = link.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 50, 
+                            behavior: "smooth",
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
