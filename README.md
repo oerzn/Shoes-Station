@@ -3,5 +3,5 @@
  Landing Page was built using HTML, CSS, Javascript
 
 
- # Check landing page 
-https://github.com/oerzn/Shoes-Station 
+ # Check the landing page 
+ https://oerzn.github.io/Shoes-Station/
